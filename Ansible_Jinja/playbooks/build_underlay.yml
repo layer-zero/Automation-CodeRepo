@@ -1,0 +1,11 @@
+---
+- name: Build underlay configurations from Jinja2 template
+  hosts: fabric
+  gather_facts: false
+
+  tasks:
+    - name: Render configuration files from template
+      ansible.builtin.template:
+        src: ../templates/interfaces.j2
+        dest: configs/{{ inventory_hostname }}.cfg
+        mode: '0644'
