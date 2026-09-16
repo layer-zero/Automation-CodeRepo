@@ -1,16 +1,6 @@
 ---
 path: "{{ lookup('env', 'PWD') }}"
 
-CVP_CONFIGLETS:
-  OSPF_spine1: "{{ lookup('file', path ~ '/configs/spine1.cfg') }}"
-  OSPF_spine2: "{{ lookup('file', path ~ '/configs/spine2.cfg') }}"
-  OSPF_spine3: "{{ lookup('file', path ~ '/configs/spine3.cfg') }}"
-  OSPF_spine4: "{{ lookup('file', path ~ '/configs/spine4.cfg') }}"
-  OSPF_leaf1:  "{{ lookup('file', path ~ '/configs/leaf1.cfg') }}"
-  OSPF_leaf2:  "{{ lookup('file', path ~ '/configs/leaf2.cfg') }}"
-  OSPF_leaf3:  "{{ lookup('file', path ~ '/configs/leaf3.cfg') }}"
-  OSPF_leaf4:  "{{ lookup('file', path ~ '/configs/leaf4.cfg') }}"
-
 CVP_DEVICES:
   - fqdn: 'leaf1'
     parentContainerName: 'Leaf'
