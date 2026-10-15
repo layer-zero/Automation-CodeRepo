@@ -1,0 +1,19 @@
+{
+    "interfaces": {
+        "Management1": {
+            "name": "Management1",
+            "lineProtocolStatus": "up",
+            "interfaceStatus": "connected",
+            "mtu": 1500,
+            "ipv4Routable240": false,
+            "ipv4Routable0": false,
+            "interfaceAddress": {
+                "ipAddr": {
+                    "address": "192.168.0.11",
+                    "maskLen": 24
+                }
+            },
+            "nonRoutableClassEIntf": false
+        }
+    }
+}
