@@ -12,7 +12,9 @@ ansible_httpapi_validate_certs: false
 
 # Credentials
 ansible_user: arista
-ansible_ssh_pass: YourLabPasswordHere
+# Note: ansible_ssh_pass is older syntax, ansible_password should be used instead.
+ansible_password: 8coywy5tktwm155f
+# ansible_ssh_pass: 8coywy5tktwm155f
 
 # Global login banner for all switches in topology
 banner_text: "This banner came from group_vars/WORKSHOP_FABRIC.yml"
